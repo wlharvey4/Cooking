@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2019-01-14 Mon 11:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cooking Tips</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="WLHarvey4" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Cooking Tips</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb033426">1. Beef</a>
+<ul>
+<li><a href="#orgc734fbd">1.1. Beef Cuts</a>
+<ul>
+<li><a href="#org1683d75">1.1.1. Cheaper Side</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb033426" class="outline-2">
+<h2 id="orgb033426"><span class="section-number-2">1</span> Beef</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgc734fbd" class="outline-3">
+<h3 id="orgc734fbd"><span class="section-number-3">1.1</span> Beef Cuts</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<div class="figure">
+<p><img src="./img/primal_cuts.png" alt="primal_cuts.png" />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1683d75" class="outline-4">
+<h4 id="org1683d75"><span class="section-number-4">1.1.1</span> Cheaper Side</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+These inexpensive cuts of beef deliver plenty of meaty flavor
+satisfaction, but they’re much easier on the wallet than some of
+the showier cuts.
+</p>
+
+<p>
+These eight beef cuts are incredibly flavorful, but they’re unique
+and less likely to be spotted in your regular supermarket meats
+section. You may need to ask the butcher if they carry the cut or
+seek out a specialty butcher shop.
+</p>
+
+<p>
+<h1>7-Bone Chuck Steak</h2>
+</p>
+
+
+<div class="figure">
+<p><img src="./img/7_bone_chuck_steak.jpeg" alt="7_bone_chuck_steak.jpeg" />
+</p>
+</div>
+
+<p>
+Identified by the 7-shaped bone it contains.  Slow-cook to bring
+out its full, savory flavor.
+</p>
+
+<p>
+This cut of beef is known as the 7-bone steak because it has a
+lot of bones. It comes from the shoulder (the chuck), right
+beside the ribeye. That means it has all the flavor of a ribeye,
+but it has a much lower price tag.
+</p>
+
+<p>
+Cook chuck steaks the same way you would a ribeye: quick sear on
+a grill or cast-iron skillet. Thick-cut chuck steaks can be great
+in a slow-cooker recipe. It has a little more chew than tender
+ribeye, and of course those bones.
+</p>
+
+
+<p>
+<h2>BBQ BEEF CHUCK STEAK</h2>
+</p>
+
+<p>
+Flavorful 7-Bone Chuck Steak is marinated and grilled. Use the
+marinade as your barbecue sauce.
+</p>
+
+
+<div class="figure">
+<p><img src="./img/bbq-beef-chuck-steaks-horizontal.tif.jpeg" alt="bbq-beef-chuck-steaks :title: BBQ Beef Chuck Steaks" width="50%" />
+</p>
+</div>
+
+<p>
+<h3>Ingredients</h3>
+</p>
+<ul class="org-ul">
+<li>1 beef 7-Bone Chuck Steak, cut 3/4 to 1 inch thick (about 2
+pounds)</li>
+<li>Marinade
+<ul class="org-ul">
+<li>1 cup finely chopped onion</li>
+<li>1 cup ketchup</li>
+<li>1/3 cup packed brown sugar</li>
+<li>1/3 cup red wine vinegar</li>
+<li>1 tablespoon Worcestershire sauce</li>
+<li>1/8 to 1/4 teaspoon crushed red peppe</li>
+</ul></li>
+</ul>
+
+
+<p>
+<h3>Cooking</h3>
+</p>
+<ol class="org-ol">
+<li>Combine marinade ingredients in medium bowl. Place beef
+7-Bone Chuck Steak and 1 cup marinade in food-safe plastic
+bag; turn to coat. Close bag securely and marinate in
+refrigerator 6 hours or as long as overnight, turning
+occasionally. Refrigerate remaining marinade.</li>
+<li>Remove steak; discard marinade. Place steak on grid over
+medium, ash-covered coals. Grill, covered, 12 to 14 minutes
+for medium rare (145°F) to medium (160°F) doneness, turning
+occasionally.</li>
+<li>Place remaining marinade in small saucepan; bring to a
+boil. Reduce heat; simmer 10 to 15 minutes or until sauce
+consistency, stirring occasionally.</li>
+<li>Cut steak into serving-size pieces. Serve with sauce.</li>
+</ol>
+
+<p>
+<h1>Flat Iron</h1>
+</p>
+
+<p>
+Also in the shoulder, you’ll find a fine steak that sits on the
+cow’s shoulder bladers. It may be sold as top blade or flat iron
+steak. The steak is actually two different muscles connected by
+a thick line of gristle. The gristle is often cut away to
+produce two cuts.
+</p>
+
+<p>
+Flat iron steaks are very flavorful and buttery due to some good
+marbling. They behave and taste a lot like the more expensive
+flank steak. Because they’re so tender, you don’t need to do
+much more than grill a flat iron steak and season it with salt
+and pepper, or use a quick spice rub for tacos. This cut of
+steak would be great as a salad topper, too, or served with a
+creamy cauliflower mash and pan sauce.
+</p>
+
+<p>
+<h1>Chuck-Eye Steak</h1>
+</p>
+
+<p>
+This steak is basically a ribeye. In fact, it’s often called the
+“poor man’s ribeye.” It comes from the same part of the cow as
+the prize ribeye, but it’s cut thinner so butchers can get an
+extra piece to sell.
+</p>
+
+<p>
+Cook chuck-eye steaks just like you would a real ribeye. Give it
+a little salt and pepper, and sear it on a cast-iron skillet or
+grill. Don’t overload this cut with a marinade or souped up
+steak sauce. It’s mild and buttery, so just let the flavor shine
+on its own.
+</p>
+
+<p>
+<h1>Petite Tender</h1>
+</p>
+
+<p>
+You may see this cut listed as teres major or petite tender at
+the butcher, but no matter the name, think these three words:
+cheap hanger steak. Once upon a time, hanger steak made these
+lists of cheap beef cuts because no one knew what that
+incredibly tender cut of beef was. Today, however, the secret is
+out. So the cheaper solution to the once-cheap hanger steak is
+petite tender or teres major.
+</p>
+
+<p>
+This cut of beef acts like a filet mignon: lean, tender, and
+spongy when cooked right. Cut it into medallions and sear like
+filet mignon steaks, or sear the outside in a high-heat skillet
+and roast until medium-rare.
+</p>
+
+<p>
+<h1>Tri-Tip Sirloin</h1>
+</p>
+
+<p>
+This steak comes from a triangle-shaped muscle at the bottom of
+the sirloin. It’s often overlooked because it’s not particularly
+pretty (it doesn’t make consistently-sized steaks), but for the
+person who has no problem finding the beauty in some ugly
+ducklings, this is the steak for you.
+</p>
+
+<p>
+The tri-tip sirloin steak takes well to a marinade and
+grilling. Cook it to medium to help break down some of the
+connective tissue that runs through it, or slice against the
+grain (at least as best you can) to make it more tender.
+</p>
+
+<p>
+<h1>Beef Shank</h1>
+</p>
+
+<p>
+So if you love the flavor of beef short ribs and want them for
+your meals, but loathe the price tag, pick up a pack of beef
+shank (or beef chins) instead.
+</p>
+
+<p>
+These cuts have an incredibly beefy flavor that performs best in
+a long braise. Bonus: look at that marrow-packed bone in each
+cut. That’s a well of rich flavor waiting for your stew or
+roast.
+</p>
+
+<p>
+<h1>Denver Steaks</h1>
+</p>
+
+<p>
+This cut of beef, which comes from the chuck primal cut, is also
+known as the boneless chuck short rib. However, don’t be
+confused—they are not deboned short ribs, and they don’t have to
+be braised. This cut is sometimes tricky for a butcher to get,
+so you may have a hard time finding it.
+</p>
+
+<p>
+These steaks are tender and flavorful, great for grilling or
+slicing for a quick sauté. Slice against the grain to cut
+through some of the marbling and connective tissue. Don’t
+overcook these steaks either. They’ll turn tough in the blink of
+an eye.
+</p>
+
+<p>
+<h1>Merlot</h1>
+</p>
+
+<p>
+The merlot cut comes from the side of the cow’s heel. While
+these hind leg cuts are often very lean (aka tough) because of
+their heavy use, this one manages to be quite tender. Because of
+its stronger flavor but tender texture, this cut is great in
+everything from stir-fries to sheet-pan dinners.
+</p>
+
+<p>
+The merlot cut gets it name from its ruby red color. That’s the
+blood in the cut. Indeed, if you’re blood-averse, avoid this
+cut. Also, don’t overcook the merlot cut. It will very quickly
+produce an irony flavor.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2019-01-14 Mon 10:46</p>
+<p class="author">Author: WLHarvey4</p>
+<p class="date">Created: 2019-01-14 Mon 11:43</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

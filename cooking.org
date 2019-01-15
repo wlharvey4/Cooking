@@ -2,7 +2,7 @@
 
 #+TITLE: Cooking Tips
 #+AUTHOR: WLHarvey4
-#+DATE: <2019-01-15 Tue 10:32>
+#+DATE: <2019-01-15 Tue 10:50>
 
 * Beef
 
@@ -193,6 +193,13 @@
      The merlot cut gets it name from its ruby red color. That’s the blood in
      the cut. Indeed, if you’re blood-averse, avoid this cut. Also, don’t
      overcook the merlot cut. It will very quickly produce an irony flavor.
+
+* README                                                           :noexport:
+
+  #+BEGIN_SRC markdown :tangle README.md
+  # About COOKING
+  Some tips and tricks and recipes for fun
+  #+END_SRC
 
 * EXPORT SETTINGS                                                  :noexport:
 
